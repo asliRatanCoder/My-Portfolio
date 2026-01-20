@@ -3,15 +3,13 @@ import "./Profile.css";
 function Profile() {
   const baseUrl = import.meta.env.BASE_URL;
   const resumeUrl = `${baseUrl}Data/Anmol_Ratan_Tiwari_Resume_latest.pdf`;
+  const profileImageUrl = `${baseUrl}Data/Profile Picture.jpeg`;
 
   return (
     <section id="profile" className="profile">
       <div className="profile-container">
         <div className="profile-image">
-          <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQEBaJFknD01eg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721197511806?e=1770249600&v=beta&t=Wen6CPPzy8K-ZOUZ0BxgrORC6vB7rhzZBf6LiD_pc5E"
-            alt="Profile-image"
-          />
+          <img src={profileImageUrl} alt="Profile-image" />
         </div>
         <div className="profile-info">
           <h1 className="profile-name">Anmol Ratan Tiwari</h1>
