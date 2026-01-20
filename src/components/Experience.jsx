@@ -4,7 +4,7 @@ function Experience() {
   const experiences = [
     {
       id: 1,
-      title: 'Associate Software Engineer',
+      title: 'Software Engineer',
       company: 'Shineywise Technologies Pvt Ltd',
       period: 'May 2025 - Present',
       description: 'Hands-on experience in Developing and APIs using Mulesoft and integrating with backend services, Deploying applications on Cloudhub.',
