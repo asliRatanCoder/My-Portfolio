@@ -19,6 +19,7 @@
 
 .profile-image {
   flex-shrink: 0;
+  height: 200px;
 }
 
 .profile-image img {
