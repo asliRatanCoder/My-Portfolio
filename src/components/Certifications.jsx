@@ -1,38 +1,39 @@
-import './Certifications.css'
+import "./Certifications.css";
 
 function Certifications() {
+  const baseUrl = import.meta.env.BASE_URL;
   const certifications = [
     {
       id: 1,
-      name: 'Salesforce Certified Mulesoft Developer 1',
-      issuer: 'Salesforce',
-      date: 'November 2026',
-      credentialId: '6938206',
-      image: '/Data/Certified MuleSoft Developer- Level 1.png'
+      name: "Salesforce Certified Mulesoft Developer 1",
+      issuer: "Salesforce",
+      date: "November 2026",
+      credentialId: "6938206",
+      image: `${baseUrl}Data/Certified MuleSoft Developer- Level 1.png`,
     },
     {
       id: 2,
-      name: 'Salesforce Certified Mulesoft Developer 2',
-      issuer: 'Salesforce',
-      date: 'November 2025',
-      credentialId: '6984240',
-      image: '/Data/Certified MuleSoft Developer- Level 2.png'
+      name: "Salesforce Certified Mulesoft Developer 2",
+      issuer: "Salesforce",
+      date: "November 2025",
+      credentialId: "6984240",
+      image: `${baseUrl}Data/Certified MuleSoft Developer- Level 2.png`,
     },
     {
       id: 3,
-      name: 'Salesforce Certified AI Associate',
-      issuer: 'Salesforce',
-      date: 'December 2024',
-      credentialId: '5542616',
-      image: '/Data/Salesforce Certified AI Associate.png'
-    }
-  ]
+      name: "Salesforce Certified AI Associate",
+      issuer: "Salesforce",
+      date: "December 2024",
+      credentialId: "5542616",
+      image: `${baseUrl}Data/Salesforce Certified AI Associate.png`,
+    },
+  ];
 
   return (
     <section id="certifications" className="certifications">
       <h2>Certifications</h2>
       <div className="certifications-grid">
-        {certifications.map(cert => (
+        {certifications.map((cert) => (
           <div key={cert.id} className="certification-card">
             <div className="certification-image">
               <img src={cert.image} alt={cert.name} />
@@ -47,7 +48,7 @@ function Certifications() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Certifications
+export default Certifications;
