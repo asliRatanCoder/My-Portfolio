@@ -1,54 +1,71 @@
-import './About.css'
+import { skills, experience, education, certifications, resume, profile } from '../data/site'
 
-function About() {
+export default function About() {
+  const base = import.meta.env.BASE_URL
   return (
-    <section id="about" className="about">
-      <h2>About Me</h2>
-      <div className="about-content">
-        <div className="about-text">
+    <section id="about" className="section section-alt">
+      <div className="container about-grid">
+        <div>
+          <p className="section-kicker">About</p>
+          <h2>Full-stack, with a bias for shipping.</h2>
           <p>
-            Hi, I'm Anmol Ratan Tiwari, and I'm working as a Software Developer at Shineywise Technologies Pvt Ltd.
+            I am a software engineer at Shineywise Technologies in India, where I built a healthcare
+            lab&rsquo;s patient app, collector app, WhatsApp bot and backend integrations from scratch and
+            took them through Google review. I take on freelance work alongside that: fixed-price sites
+            and bots for small businesses, and overflow development for agencies.
           </p>
           <p>
-            focused on backend development, APIs, and system integrations. Experienced in MuleSoft and enterprise applications, with a strong interest in building scalable and maintainable systems
+            I write clear updates, keep repos tidy, and hand over things you can run without me.
+            Based in {profile.location}, which overlaps the UK working day and US mornings and evenings.
           </p>
-          <p>
-            {/* I'm always eager to learn new technologies and take on challenging projects 
-            that push the boundaries of what's possible. */}
-          </p>
-        </div>
-        <div className="about-skills">
-          <h3>Technical Skills</h3>
-          <div className="skills-categories">
-            <div className="skill-category">
-              <strong>Languages:</strong>
-              <span>Java, C++, JavaScript, SQL</span>
+
+          <h3 className="sub-heading">Experience</h3>
+          {experience.map((e) => (
+            <div key={e.company} className="timeline-item">
+              <div className="timeline-head">
+                <strong>{e.title}</strong> · {e.company}
+                <span className="period">{e.period}</span>
+              </div>
+              <p>{e.body}</p>
             </div>
-            <div className="skill-category">
-              <strong>Frontend:</strong>
-              <span>HTML, CSS, ReactJS</span>
-            </div>
-            <div className="skill-category">
-              <strong>Backend:</strong>
-              <span>Java, Spring, Spring Boot, MuleSoft</span>
-            </div>
-            <div className="skill-category">
-              <strong>Salesforce:</strong>
-              <span>Apex, Triggers, Securities, Flows</span>
-            </div>
-            <div className="skill-category">
-              <strong>DevOps:</strong>
-              <span>Git, GitHub Actions, AWS, VS Code</span>
-            </div>
-            <div className="skill-category">
-              <strong>Methodologies:</strong>
-              <span>Agile/Scrum, CI/CD, Test-Driven Development</span>
+          ))}
+          <div className="timeline-item">
+            <div className="timeline-head">
+              <strong>{education.degree}</strong> · {education.institution}
+              <span className="period">{education.period}</span>
             </div>
           </div>
+
+          <a className="btn btn-outline" href={`${base}${resume}`} download="Anmol_Ratan_Tiwari_Resume.pdf">
+            Download CV (PDF)
+          </a>
         </div>
+
+        <aside>
+          <h3 className="sub-heading">Skills</h3>
+          <dl className="skills">
+            {skills.map((s) => (
+              <div key={s.group} className="skill-row">
+                <dt>{s.group}</dt>
+                <dd>{s.items.join(' · ')}</dd>
+              </div>
+            ))}
+          </dl>
+
+          <h3 className="sub-heading">Certifications</h3>
+          <ul className="cert-list">
+            {certifications.map((c) => (
+              <li key={c.id}>
+                <img src={`${base}${c.image}`} alt="" width="48" height="48" loading="lazy" />
+                <div>
+                  <strong>{c.name}</strong>
+                  <span>Salesforce · ID {c.id}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </aside>
       </div>
     </section>
   )
 }
-
-export default About

@@ -1,26 +1,25 @@
-import './App.css'
 import Header from './components/Header'
-import Profile from './components/Profile'
+import Hero from './components/Hero'
+import Work from './components/Work'
+import Services from './components/Services'
+import Process from './components/Process'
 import About from './components/About'
-import Experience from './components/Experience'
-import Education from './components/Education'
-import Certifications from './components/Certifications'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <Profile />
       <main>
+        <Hero />
+        <Work />
+        <Services />
+        <Process />
         <About />
-        <Experience />
-        <Education />
-        <Certifications />
+        <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
-
-export default App

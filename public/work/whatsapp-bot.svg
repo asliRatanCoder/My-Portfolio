@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="WhatsApp booking conversation">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e7f6ec"/><stop offset="1" stop-color="#d1efe0"/></linearGradient></defs>
+  <rect width="640" height="400" fill="url(#g)"/>
+  <rect x="180" y="24" width="280" height="376" rx="28" fill="#111b21"/>
+  <rect x="192" y="36" width="256" height="352" rx="20" fill="#0b141a"/>
+  <rect x="192" y="36" width="256" height="52" rx="20" fill="#202c33"/>
+  <rect x="192" y="70" width="256" height="18" fill="#202c33"/>
+  <circle cx="220" cy="62" r="13" fill="#25d366"/>
+  <text x="240" y="59" fill="#e9edef" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700">Banj Life Care</text>
+  <text x="240" y="74" fill="#8696a0" font-family="Inter,Arial,sans-serif" font-size="9">Business account · online</text>
+  <g font-family="Inter,Arial,sans-serif" font-size="10.5">
+    <rect x="204" y="100" width="170" height="54" rx="8" fill="#202c33"/>
+    <text x="212" y="116" fill="#e9edef">Hi! What would you like to do?</text>
+    <text x="212" y="131" fill="#53bdeb">1  Book a blood test</text>
+    <text x="212" y="146" fill="#53bdeb">2  Track my collection</text>
+    <rect x="360" y="164" width="76" height="24" rx="8" fill="#005c4b"/>
+    <text x="372" y="180" fill="#e9edef">1</text>
+    <rect x="204" y="198" width="196" height="40" rx="8" fill="#202c33"/>
+    <text x="212" y="214" fill="#e9edef">Send your prescription photo or</text>
+    <text x="212" y="229" fill="#e9edef">type the test name.</text>
+    <rect x="306" y="248" width="130" height="58" rx="8" fill="#005c4b"/>
+    <rect x="314" y="256" width="114" height="34" rx="4" fill="#0f4a3c"/>
+    <text x="322" y="277" fill="#a6e3c8">📎 prescription.jpg</text>
+    <text x="314" y="301" fill="#8696a0" font-size="8">10:42 ✓✓</text>
+    <rect x="204" y="316" width="206" height="54" rx="8" fill="#202c33"/>
+    <text x="212" y="332" fill="#e9edef">Found: CBC, Lipid Profile.</text>
+    <text x="212" y="347" fill="#e9edef">Home collection tomorrow 8 AM?</text>
+    <text x="212" y="362" fill="#53bdeb">Confirm · Change time</text>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" fill="#1e3a8a">
+    <text x="28" y="60" font-size="14" font-weight="800">Book</text>
+    <text x="28" y="80" font-size="11" fill="#334155">without an app</text>
+    <text x="28" y="130" font-size="14" font-weight="800">Track</text>
+    <text x="28" y="150" font-size="11" fill="#334155">the collector live</text>
+    <text x="28" y="200" font-size="14" font-weight="800">Upload</text>
+    <text x="28" y="220" font-size="11" fill="#334155">a prescription photo</text>
+    <text x="490" y="60" font-size="14" font-weight="800">Meta Cloud API</text>
+    <text x="490" y="80" font-size="11" fill="#334155">no BSP, your number</text>
+    <text x="490" y="130" font-size="14" font-weight="800">Node + TS</text>
+    <text x="490" y="150" font-size="11" fill="#334155">webhook gateway</text>
+    <text x="490" y="200" font-size="14" font-weight="800">OCR</text>
+    <text x="490" y="220" font-size="11" fill="#334155">matched to catalogue</text>
+  </g>
+</svg>

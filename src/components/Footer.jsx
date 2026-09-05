@@ -1,18 +1,16 @@
-import './Footer.css'
+import { profile } from '../data/site'
 
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+    <footer className="site-footer">
+      <div className="container footer-inner">
+        <p>&copy; {new Date().getFullYear()} {profile.name}. Freelance app and web developer, India.</p>
         <div className="footer-links">
-          <a href="mailto:anmolratantiwari98@gmail.com">Email</a>
-          <a href="https://github.com/asliratanCoder" target="_blank" rel="noopener noreferrer">GitHub</a>
-           <a href="https://www.linkedin.com/in/asliratan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href={`mailto:${profile.email}`}>Email</a>
+          <a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </footer>
   )
 }
-
-export default Footer
